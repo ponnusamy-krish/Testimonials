@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container{
+    
+    height: 80%;
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20pt;
+}
+.post{
+  
+    border-radius: 3%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+   
+}
+.p1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    
+    background-color: hsl(263, 55%, 52%);
+}
+  .p3{
+    grid-row-start: span 2;
+    
+}  
+.p5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: hsl(219, 29%, 14%);
+}
+.p2{
+    background-color: hsl(217, 19%, 35%);
+    
+}
+.p3,.p4{
+    background-color: hsl(0, 0%, 100%);
+}
+ .daniel-about{
+    align-self: start;   
+} 
+.profile-pic{
+    border-radius: 100%;
+    height: 40px;
+    width: 30px;
+   
+    border: 2px solid #CF9FFF;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        grid-template-columns: auto;
+    }
+    .p1{
+        grid-column: auto;
+       
+        
+        
+        background-color: hsl(263, 55%, 52%);
+    }
+      .p3{
+        grid-row: auto;
+        
+    }  
+    .p5{
+        grid-column:auto;
+       
+    }
+    /* .p2{
+      height: 60%;
+    } */
+  }
+
+   .dani{
+    display:inline;
+   
+  } 
+  .first-about{
+    font-size: 100%;
+    font-weight: 600;
+    color: white;
+    margin: 20px;
+    line-height: 20px;
+  }
+.kira-about{
+  font-size: 100%;
+  font-weight: 600;
+  color: rgba(149, 157, 165, 0.9);
+  margin: 20px;
+  line-height: 20px;
+}
+
+  .second-about{
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+    opacity: 70%;
+    margin: 20px 20px 10px 20px;
+    line-height: 20px;
+  }
+  .danni{
+    display: flex;
+    margin: 20px 20px 20px 20px;
+  }
+  .name{
+    font-size: 90%;
+    font-weight: 400;
+    color: white;
+ 
+  }
+
+  .role{
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+    opacity: 70%;
+    
+  }
